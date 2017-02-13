@@ -1,0 +1,7 @@
+<h1>Eyeshadows</h1>
+
+<ul class= "eyeshadow">
+  <% @eyeshadows.each do |eyeshadow| %>
+    <a id=<%=eyeshadow.id%> href="/eyeshadows/<%= eyeshadow.id%>"><img src="<%= eyeshadow.image_url%>"class="eyeshadow"></a>
+  <% end %>
+</ul>

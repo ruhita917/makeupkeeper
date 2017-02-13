@@ -1,0 +1,7 @@
+<h1>Mascaras</h1>
+
+<ul class= "mascara">
+  <% @mascaras.each do |mascara| %>
+    <a id=<%=mascara.id%> href="/mascaras/<%= mascara.id%>"><img src="<%= mascara.image_url%>"class="mascara"></a>
+  <% end %>
+</ul>

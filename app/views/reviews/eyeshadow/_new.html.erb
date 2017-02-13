@@ -1,0 +1,19 @@
+
+<%= form_for [@eyeshadow, @review] do |f| %>
+<div class="review_form">
+  <div class="review_buttons">
+    <%= f.label(:rating, "Rating") %>
+    <%= f.collection_radio_buttons(:rating, @rating_collection, :first, :last) %>
+  </div>
+
+  <div>
+    <%= f.label(:body, "Comment:") %>
+    <%= f.text_field(:body) %>
+  </div>
+
+  <div>
+    <%= f.submit("Submit Review") %>
+  </div>
+</div>
+
+<% end %>

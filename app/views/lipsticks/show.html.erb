@@ -1,0 +1,13 @@
+<h1 class="lipstick_show"><%= @lipstick.name.titleize %></h1>
+<div class = "row">
+  <div class="large-6 columns" id = "showimages">
+      <img src="<%= @lipstick.image_url%>">
+    </div>
+  <div class="large-6 columns text-center" id="info">
+<h2> Brand: <%= @lipstick.brand.titleize %></h2>
+<br>
+<h4><%= @lipstick.description %></h4>
+<br>
+<h3><%= link_to 'For More Info', @lipstick.product_link %></h3>
+</div>
+</div>

@@ -1,0 +1,13 @@
+<h1 class="mascara_show"><%= @mascara.name.titleize %></h1>
+<div class = "row">
+  <div class="large-6 columns" id = "showimages">
+      <img src="<%= @mascara.image_url%>">
+    </div>
+  <div class="large-6 columns text-center" id="info">
+<h2> Brand: <%= @mascara.brand.titleize %></h2>
+<br>
+<h4><%= @mascara.description %></h4>
+<br>
+<h3><%= link_to 'For More Info', @mascara.product_link %></h3>
+</div>
+</div>

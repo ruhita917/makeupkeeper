@@ -1,0 +1,7 @@
+<h1>Lipticks</h1>
+
+<ul class= "lipstick">
+  <% @lipsticks.each do |lipstick| %>
+    <a id=<%=lipstick.id%> href="/lipsticks/<%= lipstick.id%>"><img src="<%= lipstick.image_url%>"class="lipstick"></a>
+  <% end %>
+</ul>

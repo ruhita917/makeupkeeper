@@ -1,0 +1,28 @@
+<h1 class="eyeshadow_show"><%= @eyeshadow.name.titleize %></h1>
+<div class = "row">
+  <div class="large-6 columns" id = "showimages">
+      <img src="<%= @eyeshadow.image_url%>">
+    </div>
+  <div class="large-6 columns text-center" id="info">
+<h2> Brand: <%= @eyeshadow.brand.titleize %></h2>
+<br>
+<h4 class="scroll"><%= @eyeshadow.description %></h4>
+<br>
+<h3><%= link_to 'More Info!', @eyeshadow.product_link %></h3>
+</div>
+</div>
+
+<br>
+<br>
+
+<%= render "reviews/eyeshadow/new" %>
+
+<h3 id="review-show">Reviews :</h3>
+
+<ul class="review">
+  <% @reviews.each do |review| %>
+  <li>
+    <%= review.rating %> , <%= review.body %>
+  </li>
+  <% end %>
+</ul>

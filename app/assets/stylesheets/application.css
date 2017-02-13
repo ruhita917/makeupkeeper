@@ -1,0 +1,226 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /*.top-bar {
+  color: black;
+  font-size: 30px;
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+  font: white;
+}
+.title {
+  font-style: italic;
+  font-size: 50px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.eyeshadow img {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  display: inline-block;
+}
+.mascara-show {
+  border: 5px solid #3C3C3C;
+}*/
+
+.scroll {
+  /*background-color: #00FFFF;*/
+  width: 600px;
+  height: 200px;
+  overflow: scroll;
+}
+
+
+.logo {
+  font-size: 30px;
+  text-align: left
+}
+
+a {
+  color: #E75480;
+}
+#info {
+  margin-top: 3em;
+}
+#showimages img {
+  width:  400px;
+  height: 400px;
+  /*border-radius: 15px;*/
+  display: inline;
+  margin-top: 5em;
+  position: relative;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #E75480;
+}
+
+.eyeshadow_show {
+  position: relative;
+  text-align: center;
+}
+/*
+.lipstick_show {
+  position: relative;
+  text-align: left;
+}*/
+
+body {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/b7/27/e4/b727e435e9b7fd560b14bd33269e77b7.jpg");
+  background-size: cover;
+  /*opacity: .5;*/
+  }
+
+.eyeshadow img {
+  width:  200px;
+  height: 200px;
+  margin: 0.5em;
+  /*border-radius: 15px;*/
+  float: left;
+  display: inline;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #E75480;
+  margin-right: .5em;
+}
+
+.eyeshadow {
+  margin-left: 10em;
+}
+
+.mascara img {
+  width:  200px;
+  height: 200px;
+  margin: 0.5em;
+  /*border-radius: 15px;*/
+  float: left;
+  display: inline;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #E75480;
+  margin-right: .5em;
+}
+
+.mascara {
+  margin-left: 10em;
+}
+
+.lipstick img {
+  width:  200px;
+  height: 200px;
+  margin: 0.5em;
+  /*border-radius: 15px;*/
+  float: left;
+  display: inline;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #E75480;
+  margin-right: .5em;
+}
+
+.lipstick {
+  margin-left: 10em;
+}
+
+.main-page {
+  text-align: center;
+  color: black;
+  font: bold 100px Poor Richard;
+}
+
+#mainpage-style {
+  font: bold 30px Poor Richard black;
+  font-weight: bolder;
+  color: #E75480;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.main-title {
+  font: bold 40px Poor Richard, serif;
+  color: black;
+}
+
+.eyeshadowspage {
+  font: italic bold 50px Poor Richard, serif;
+  text-align: center;
+  color: white;
+}
+
+.mascaraspage {
+  font: italic bold 50px Poor Richard, serif;
+  text-align: center;
+  color: white;
+}
+
+.lipstickshow {
+  font: italic bold 50px Poor Richard, serif;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.top-bar {
+  background-color: black;
+}
+
+/*.top-bar-left {
+  text-align: left;
+}*/
+
+.nav {
+  text-align: right;
+}
+
+
+.review {
+  font: 20px Poor Richard, underline;
+  list-style-type: none;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#review-show {
+  font: 30px Poor Richard, serif;
+  list-style-type: none;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.review_form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  white-space: nowrap;
+  font-size: 20px;
+}
