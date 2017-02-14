@@ -5,6 +5,7 @@ class Api::V1::ReviewsController < Api::V1::BaseController
       @eyeshadow = Eyeshadow.find(params[:eyeshadow_id])
       @reviews = @eyeshadow.reviews
       respond_with @reviews, json: @reviews
+    end
   end
 
 end

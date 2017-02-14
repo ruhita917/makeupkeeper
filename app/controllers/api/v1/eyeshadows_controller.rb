@@ -7,4 +7,5 @@ class Api::V1::EyeshadowsController < Api::V1::BaseController
     respond_with @reviews, json: @reviews
     end
   end
+  
 end
