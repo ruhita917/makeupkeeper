@@ -154,15 +154,16 @@ body {
 }
 
 #mainpage-style {
-  font: bold 30px Poor Richard black;
+  font: bold 45px Poor Richard black;
   font-weight: bolder;
   color: #E75480;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .main-title {
-  font: bold 40px Poor Richard, serif;
+  font: bold 40px Poor Richard;
   color: black;
 }
 
@@ -225,6 +226,12 @@ h1 {
   font-size: 20px;
 }
 
-.image {
-  
+.mainpage {
+  font-size: 70px bold;
+}
+
+.first {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

@@ -10,14 +10,16 @@ class ReviewsController < ApplicationController
        @rating_collection = Review::RATINGS
     elsif params[:lipstick_id].present?
        @lipstick = Lipstick.find(params[:lipstick_id])
+       @user = current_user.id
        @review = Review.new
        @review.lipstick = @lipstick
        @rating_collection = Review::RATINGS
     else
-       @mascara = Mascara.find(params[:mascara_id])
-       @review = Review.new
-       @review.mascara = @mascara
-       @rating_collection = Review::RATINGS
+      @mascara = Mascara.find(params[:mascara_id])
+      @user = current_user.id
+      @review = Review.new
+      @review.mascara = @mascara
+      @rating_collection = Review::RATINGS
     end
   end
 
@@ -31,7 +33,6 @@ class ReviewsController < ApplicationController
       if @review.save
           flash[:notice] = "Review added successfully"
           redirect_to eyeshadow_path(@eyeshadow)
-          # redirect_to controller: 'eyeshadow', action: 'show', id: params[:eyeshadow_id]
       else
           flash[:notice] = @review.errors.full_messages.to_sentence
           @reviews = @eyeshadow.reviews
@@ -46,8 +47,9 @@ class ReviewsController < ApplicationController
       @review.user = @user
       if @review.save
          flash[:notice] = "Review added successfully"
-         redirect_to controller: 'lipstick', action: 'show', id: params[:lipstick_id]
+         redirect_to lipstick_path(@lipstick)
       else
+        flash[:notice] = @review.errors.full_messages.to_sentence
         @reviews = @lipstick.reviews
         @rating_collection = Review::RATINGS
         render '/lipsticks/show'
@@ -60,27 +62,18 @@ class ReviewsController < ApplicationController
       @review.user = @user
       if @review.save
           flash[:notice] = "Review added successfully"
-          redirect_to controller: 'mascara', action: 'show', id: params[:mascara_id]
+          redirect_to mascara_path(@mascara)
       else
+        flash[:notice] = @review.errors.full_messages.to_sentence
         @reviews = @mascara.reviews
         @rating_collection = Review::RATINGS
         render '/mascaras/show'
       end
+    end
   end
-end
 
 
   private
-
-  # def eyeshadow_params
-  #   params.require(:eyeshadow).permit(
-  #   :name,
-  #   :brand,
-  #   :image_url,
-  #   :product_link,
-  #   :description
-  #   )
-  # end
 
    def params_strong
      params.require(:review).permit(

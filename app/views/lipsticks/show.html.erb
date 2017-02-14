@@ -6,8 +6,23 @@
   <div class="large-6 columns text-center" id="info">
 <h2> Brand: <%= @lipstick.brand.titleize %></h2>
 <br>
-<h4><%= @lipstick.description %></h4>
+<h4 class="scroll"><%= @lipstick.description %></h4>
 <br>
-<h3><%= link_to 'For More Info', @lipstick.product_link %></h3>
+<h3><%= link_to 'More Info!', @lipstick.product_link %></h3>
 </div>
 </div>
+
+<br>
+<br>
+
+<%= render "reviews/lipstick/new" %>
+
+<h3 id="review-show">Reviews :</h3>
+
+<ul class="review">
+  <% @reviews.each do |review| %>
+  <li>
+    <%= review.rating %> , <%= review.body %>
+  </li>
+  <% end %>
+</ul>
