@@ -1,11 +1,11 @@
 class MascarasController < ApplicationController
 
   def index
-    @mascaras = mascara.all
+    @mascaras = Mascara.all
   end
 
   def show
-    @mascara = mascara.find(params[:id])
+    @mascara = Mascara.find(params[:id])
     @reviews = @mascara.reviews
     @review = Review.new
     @rating_collection = Review::RATINGS

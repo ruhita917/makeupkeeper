@@ -1,11 +1,11 @@
 class LipsticksController < ApplicationController
 
   def index
-    @lipsticks = lipstick.all
+    @lipsticks = Lipstick.all
   end
 
   def show
-    @lipstick = lipstick.find(params[:id])
+    @lipstick = Lipstick.find(params[:id])
     @reviews = @lipstick.reviews
     @review = Review.new
     @rating_collection = Review::RATINGS

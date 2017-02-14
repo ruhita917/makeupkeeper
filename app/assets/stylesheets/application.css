@@ -67,6 +67,7 @@ a {
 }
 #info {
   margin-top: 3em;
+  word-wrap: break-word;
 }
 #showimages img {
   width:  400px;
