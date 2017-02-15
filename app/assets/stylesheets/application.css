@@ -54,6 +54,8 @@ h1 {
   width: 600px;
   height: 200px;
   overflow: scroll;
+  word-wrap: break-word;
+
 }
 
 
@@ -231,8 +233,17 @@ h1 {
   font-size: 70px bold;
 }
 
-.first {
+.first img{
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  display: block;
+  border:12px solid black;
+  padding:4px;
+}
+
+.mainpage::first-letter {
+    font-size: 150%;
+    color: #E75480;
+    font-style: italic;
+
 }
