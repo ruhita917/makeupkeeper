@@ -163,6 +163,9 @@ body {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 0.5em;
+text-size-adjust: inherit;
+text-size-adjust: initial;
+text-size-adjust: unset;
 }
 
 .main-title {
@@ -237,13 +240,40 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border:12px solid black;
-  padding:4px;
+  border:16px solid black;
+  padding:8px;
 }
 
 .mainpage::first-letter {
-    font-size: 150%;
-    color: #E75480;
-    font-style: italic;
+  font-size: 150%;
+  color: #E75480;
+  font-style: italic;
+}
 
+.nav {
+display: inline-block;
+text-align: center;
+margin: 0;
+float: right;
+font-size: 25px;
+}
+
+.navbar-link {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+.new_user {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  font-size: 15px;
+  font: Poor Richard;
+
+}
+
+.user_form {
+  text-align: center;
 }
