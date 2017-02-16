@@ -163,9 +163,6 @@ body {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 0.5em;
-text-size-adjust: inherit;
-text-size-adjust: initial;
-text-size-adjust: unset;
 }
 
 .main-title {
@@ -233,7 +230,7 @@ h1 {
 }
 
 .mainpage {
-  font-size: 70px bold;
+  font-size: 70px bold Poor Richard;
 }
 
 .first img{
